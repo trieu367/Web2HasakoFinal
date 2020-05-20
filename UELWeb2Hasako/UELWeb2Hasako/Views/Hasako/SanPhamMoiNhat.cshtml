@@ -1,0 +1,18 @@
+﻿@model UELWeb2Hasako.Models.HAISANKHO
+
+
+    <div class="arrivals_single_image"><img src="../images/@Html.DisplayFor(model => model.Anhbia)" alt=""></div>
+    <div class="arrivals_single_content">
+        <div class="arrivals_single_category"><a href="#">@ViewBag.tendm</a></div>
+        <div class="arrivals_single_name_container clearfix">
+            <div class="arrivals_single_name"><a href="#">@Html.DisplayFor(model => model.TenHS)</a></div>
+            <div class="arrivals_single_price text-right">@Html.DisplayFor(model => model.Dongia)</div>
+        </div>
+        <div class="rating_r rating_r_4 arrivals_single_rating"><i></i><i></i><i></i><i></i><i></i></div>
+        <form action="#"><button class="arrivals_single_button">Mua ngay</button></form>
+    </div>
+    <div class="arrivals_single_fav product_fav active"><i class="fas fa-heart"></i></div>
+    <ul class="arrivals_single_marks product_marks">
+        <li class="arrivals_single_mark product_mark product_new">mới</li>
+    </ul>
+

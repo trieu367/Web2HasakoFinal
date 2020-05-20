@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 19.375" name="dbHasakoProject">
+  <DataContextMoniker Name="/dbHasakoProjectDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3fbb9d07-bbf1-461f-b81e-e1dd75582906" absoluteBounds="3.5, 17, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/BLOG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fec9714-1b30-4ba9-98ea-a085ba1429cb" absoluteBounds="3.515, 17.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3c61bff-d701-4729-9ab8-afc7f102865d" absoluteBounds="3.5, 12, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/THANHTOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2321e222-5eb2-4140-9780-7d2fc007ce6b" absoluteBounds="3.515, 12.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a5ee095-6a5a-414d-b3ea-238f3e892735" absoluteBounds="6.25, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/CHITIETDONHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6300123-503d-4bd8-99af-5be4fa9690e0" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e170533c-8752-451f-8fe6-269afe8b9653" absoluteBounds="0.75, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/CHITIETNHAPHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b770e79e-dbfd-4538-b93c-15b675b291b2" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b827fc9-ac15-440d-9406-98c33a75cb58" absoluteBounds="6.25, 11.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/CHITIETTHANHTOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a11120a-9937-4c6c-992d-4294958b616c" absoluteBounds="6.265, 12.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db4517e8-ee00-4683-819e-00909ee653a5" absoluteBounds="0.75, 4, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/DANHMUCHAISANKHO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b18ae838-8eb8-46f6-a24a-b6cee1d02d5e" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79d68e54-1c14-4116-93d5-13e11775ac07" absoluteBounds="3.5, 8.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/DONHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e17c8d6-0b31-41d1-a5e3-5f482b38a9d2" absoluteBounds="3.515, 8.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="833c46fa-36c3-4187-afbd-ad3895abc261" absoluteBounds="0.75, 13.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/HINHTHUCTHANHTOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52ab74fb-ec95-4de0-ad74-ff2c486912a5" absoluteBounds="0.765, 13.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="949fb6f8-8395-44c5-ac8d-c9c5e017946d" absoluteBounds="0.75, 9.625, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fe3d6b5-6a83-43e8-8554-347ec33801a2" absoluteBounds="0.765, 10.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7e0c746-939a-403b-aa8c-0733acdb3bf7" absoluteBounds="6.25, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/MOTAHAISANKHO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d18e68c-3134-483a-b373-75b00888653d" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d5f1f35-d4e8-42e0-8f80-3ed1baa74252" absoluteBounds="0.75, 6.875, 2, 1.9631982421875014">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="122c318e-ffd8-4de9-8ebf-756b3baabc82" absoluteBounds="0.765, 7.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8642388f-0804-4d0e-9efc-da8c05d016db" absoluteBounds="3.5, 14.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/TAIKHOANNHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b6cd7be-5b8b-4766-9e5c-f4a149a8fc83" absoluteBounds="3.515, 15.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 12.7892976888021); (6.25 : 12.7892976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/THANHTOAN/THANHTOAN_CHITIETTHANHTOAN" />
+      <nodes>
+        <classShapeMoniker Id="a3c61bff-d701-4729-9ab8-afc7f102865d" />
+        <classShapeMoniker Id="8b827fc9-ac15-440d-9406-98c33a75cb58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.71875 : 8.125); (3.71875 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/DONHANG/DONHANG_CHITIETDONHANG" />
+      <nodes>
+        <classShapeMoniker Id="79d68e54-1c14-4116-93d5-13e11775ac07" />
+        <classShapeMoniker Id="6a5ee095-6a5a-414d-b3ea-238f3e892735" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.4142976888021); (3.10416666666667 : 13.4142976888021 : JumpStart); (3.27083333333333 : 13.4142976888021 : JumpEnd); (3.5 : 13.4142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/HINHTHUCTHANHTOAN/HINHTHUCTHANHTOAN_THANHTOAN" />
+      <nodes>
+        <classShapeMoniker Id="833c46fa-36c3-4187-afbd-ad3895abc261" />
+        <classShapeMoniker Id="a3c61bff-d701-4729-9ab8-afc7f102865d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.9728011067708); (3.125 : 12.3478011067708); (3.125 : 11.6237866958634); (3.12857443490112 : 11.6273611307645 : JumpStart); (3.24642556509888 : 11.7452122609623 : JumpEnd); (3.50121330413662 : 12)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/KHACHHANG/KHACHHANG_THANHTOAN" />
+      <nodes>
+        <classShapeMoniker Id="949fb6f8-8395-44c5-ac8d-c9c5e017946d" />
+        <classShapeMoniker Id="a3c61bff-d701-4729-9ab8-afc7f102865d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.1450512695313); (3.5 : 10.1450512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/KHACHHANG/KHACHHANG_DONHANG" />
+      <nodes>
+        <classShapeMoniker Id="949fb6f8-8395-44c5-ac8d-c9c5e017946d" />
+        <classShapeMoniker Id="79d68e54-1c14-4116-93d5-13e11775ac07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.7182867976262 : 8.8381982421875); (3.12857443490112 : 9.24848587946242 : JumpStart); (3.24642556509888 : 9.36633700966018 : JumpEnd); (3.3125 : 9.4324114445613); (3.3125 : 18.0777498372396); (3.5 : 18.0777498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/NHANVIEN/NHANVIEN_BLOG" />
+      <nodes>
+        <classShapeMoniker Id="2d5f1f35-d4e8-42e0-8f80-3ed1baa74252" />
+        <classShapeMoniker Id="3fbb9d07-bbf1-461f-b81e-e1dd75582906" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.41863291871995); (3.5 : 8.41863291871995)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/NHANVIEN/NHANVIEN_DONHANG" />
+      <nodes>
+        <classShapeMoniker Id="2d5f1f35-d4e8-42e0-8f80-3ed1baa74252" />
+        <classShapeMoniker Id="79d68e54-1c14-4116-93d5-13e11775ac07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.74154748257212); (3.1875 : 9.17904748257212); (3.1875 : 15.4142976888021); (3.5 : 15.4142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/NHANVIEN/NHANVIEN_TAIKHOANNHANVIEN" />
+      <nodes>
+        <classShapeMoniker Id="2d5f1f35-d4e8-42e0-8f80-3ed1baa74252" />
+        <classShapeMoniker Id="8642388f-0804-4d0e-9efc-da8c05d016db" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" absoluteBounds="4, 4.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/HAISANKHO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="481b7fd4-5669-40b2-9b4c-d21bde71378c" absoluteBounds="4.015, 4.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 4.85179768880208); (6.25 : 4.85179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/HAISANKHO/HAISANKHO_MOTAHAISANKHO" />
+      <nodes>
+        <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
+        <classShapeMoniker Id="a7e0c746-939a-403b-aa8c-0733acdb3bf7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.01087117513021); (3.63541666666667 : 2.01087117513021 : JumpStart); (3.80208333333333 : 2.01087117513021 : JumpEnd); (5 : 2.01087117513021); (5 : 4.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/CHITIETNHAPHANG/CHITIETNHAPHANG_HAISANKHO" />
+      <nodes>
+        <classShapeMoniker Id="e170533c-8752-451f-8fe6-269afe8b9653" />
+        <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.72199625651042); (3.63541666666667 : 4.72199625651042 : JumpStart); (3.80208333333333 : 4.72199625651042 : JumpEnd); (4 : 4.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/DANHMUCHAISANKHO/DANHMUCHAISANKHO_HAISANKHO" />
+      <nodes>
+        <classShapeMoniker Id="db4517e8-ee00-4683-819e-00909ee653a5" />
+        <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

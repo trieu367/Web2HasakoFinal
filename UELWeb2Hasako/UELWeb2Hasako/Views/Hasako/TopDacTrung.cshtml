@@ -1,0 +1,24 @@
+﻿@model IEnumerable<UELWeb2Hasako.Models.HAISANKHO>
+
+@foreach (var sp in Model)
+{
+    <div class="featured_slider_item">
+        <div class="border_active"></div>
+        <div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="~/images/@sp.Anhbia" alt="@sp.TenHS"></div>
+            <div class="product_content">
+                <div class="product_price">@sp.Dongia</div>
+                <div class="product_name"><div><a href="product.html">@sp.TenHS</a></div></div>
+                <div class="product_extras">
+                    <button class="product_cart_button active">Mua ngay</button>
+                </div>
+            </div>
+            <div class="product_fav"><i class="fas fa-heart"></i></div>
+            <ul class="product_marks">
+                <li class="product_mark product_discount"></li>
+                @*<li class="product_mark product_new"></li>*@
+            </ul>
+        </div>
+    </div>
+
+}

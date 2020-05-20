@@ -1,0 +1,70 @@
+﻿@model IEnumerable<UELWeb2Hasako.Models.HAISANKHO>
+@{
+    ViewBag.Title = "SanPham";
+    Layout = "~/Views/Shared/_LayoutProduct.cshtml";
+}
+
+
+<!-- Shop -->
+
+<div class="shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Shop Sidebar -->                
+                    
+                           @Html.Action("Danhmuc","Hasako")
+                   
+            </div>
+
+            <div class="col-lg-9">
+                <!-- Shop Content -->
+
+                <div class="shop_content">
+                    <div class="shop_bar clearfix">
+                        <div class="shop_product_count"><span></span> products found</div>
+                        <div class="shop_sorting">
+                            <span>Sort by:</span>
+                            <ul>
+                                <li>
+                                    <span class="sorting_text">highest rated<i class="fas fa-chevron-down"></i> </span>
+                                    <ul>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>highest rated</li>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>name</li>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "price" }'>price</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product_grid">
+
+                        <div class="product_grid_border">
+
+                            @foreach (var HAISANKHO in Model)
+                            {
+                                <a href="@Url.Action("ChiTietSanPham","Hasako",new { id = HAISANKHO.MaHS })">
+                                    <div class="product_item is_new">
+                                        <div class="product_border">
+                                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="~/images/@HAISANKHO.Anhbia" alt="@HAISANKHO.TenHS"></div>
+                                            <div class="product_content">
+                                                <div class="product_price">@HAISANKHO.Dongia</div>
+                                                <div class="product_name"><div><a href="@HAISANKHO.TenHS" tabindex="0"></a></div></div>
+                                            </div>
+                                            <div class="product_fav"><i class="fas fa-heart"></i></div>
+                                            <ul class="product_marks">
+                                                <li class="product_mark product_discount">-25%</li>
+                                                <li class="product_mark product_new">new</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </a>
+                                    }
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>

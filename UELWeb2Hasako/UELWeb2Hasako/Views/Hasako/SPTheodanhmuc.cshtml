@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "SPTheodanhmuc";
+    Layout = "~/Views/Shared/_LayoutProduct.cshtml";
+}
+
+<div class="banner">
+    <div class="banner_background" style="background-image:url(../images/bannerhuman.jpg)"></div>
+    <div class="container fill_height">
+        <div class="row fill_height">
+            <!--div class="banner_product_image"><img src="../images/banner_product.png" alt="" /></!--div>-->
+            <div class="col-lg-5 offset-lg-4 fill_height">
+                <div class="banner_content">
+                    <h1 class="banner_text">Ẩm thực Việt, </h1>
+                    <h1 class="banner_text" style="display:inline">Kết nối người Việt</h1>
+
+                    <div class="banner_price"><span></span></div>
+                    <div class="banner_product_name"></div>
+                    <div class="button banner_button"><a href="#">Mua ngay</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Shop -->
+
+<div class="shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Shop Sidebar -->
+
+                @Html.Action("Danhmuc", "Hasako")
+
+
+
+            </div>
+
+            <!-- Shop Content -->
+            <div class="col-lg-9">
+                <div class="shop_content">
+                    <div class="shop_bar clearfix">
+                        <div class="shop_product_count"><span></span> products found</div>
+                        <div class="shop_sorting">
+                            <span>Sort by:</span>
+                            <ul>
+                                <li>
+                                    <span class="sorting_text">highest rated<i class="fas fa-chevron-down"></i> </span>
+                                    <ul>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>highest rated</li>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>name</li>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "price" }'>price</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product_grid">
+
+                        <div class="product_grid_border">
+
+                            @foreach (var HAISANKHO in Model)
+                            {<a href="@Url.Action("ChiTietSanPham","Hasako",new { id = HAISANKHO.MaHS })">
+                                    <div class="product_item is_new">
+                                        <div class="product_border">
+                                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="~/images/@HAISANKHO.Anhbia" alt="@HAISANKHO.TenHS"></div>
+                                            <div class="product_content">
+                                                <div class="product_price">@HAISANKHO.Dongia</div>
+                                                <div class="product_name"><div><a href="@HAISANKHO.TenHS" tabindex="0"></a></div></div>
+                                            </div>
+                                            <div class="product_fav"><i class="fas fa-heart"></i></div>
+                                            <ul class="product_marks">
+                                                <li class="product_mark product_discount">-25%</li>
+                                                <li class="product_mark product_new">new</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<UELWeb2Hasako.Models.HAISANKHO>
+
+        @foreach (var spmoihscb in Model)
+        {
+            <div class="arrivals_slider_item">
+                <div class="border_active"></div>
+                <div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="../images/@spmoihscb.Anhbia" alt="@spmoihscb.TenHS"></div>
+                    <div class="product_content">
+                        <div class="product_price">@spmoihscb.Dongia VNĐ</div>
+                        <div class="product_name"><div><a href="@Url.Action("Details", "Hasako", new { id = spmoihscb.MaHS })">@spmoihscb.TenHS </a></div></div>
+                        <div class="product_extras">
+                            <button class="product_cart_button">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="product_fav"><i class="fas fa-heart"></i></div>
+                    <ul class="product_marks">
+                        <li class="product_mark product_discount">-25%</li>
+                        <li class="product_mark product_new">mới</li>
+                    </ul>
+                </div>
+            </div>
+        }
+
+
+

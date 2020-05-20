@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OneTech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OneTech shop project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Content/bootstrap4/bootstrap.min.css">
+    <link href="../plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/slick-1.8.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="../Content/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="../Content/responsive.css">
+</head>
+<body>
+
+    <div class="super_container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <!-- Top Bar -->
+
+            <div class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex flex-row">
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+84 8100 1008</div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:support@hasako.com">support@hasako.com</a></div>
+                            <div class="top_bar_content ml-auto">
+                                <div class="top_bar_menu">
+                                    <ul class="standard_dropdown top_bar_dropdown">
+                                        <li>
+                                            <a href="#">Tiếng Việt<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">Spanish</a></li>
+                                                <li><a href="#">German</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">VNĐ<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li><a href="#">$ US Dollars</a></li>
+                                                <li><a href="#">EUR Euro</a></li>
+                                                <li><a href="#">GBP British Pound</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top_bar_user">
+                                    <div class="user_icon"><img src="../images/user.svg" alt=""></div>
+                                    <div><a href="#">Đăng ký</a></div>
+                                    <div><a href="#">Đăng nhập</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Main -->
+
+            <div class="header_main">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Logo -->
+                        <div class="col-lg-2 col-sm-3 col-3 order-1">
+                            <div class="logo_container">
+                                <div class="logo"><a href="#"><img src="../images/hasakologo.png" height="120px"/></a></div>
+                            </div>
+                        </div>
+
+                        <!-- Search -->
+                        <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                            <div class="header_search">
+                                <div class="header_search_content">
+                                    <div class="header_search_form_container">
+                                        <form action="#" class="header_search_form clearfix">
+                                            <input type="search" required="required" class="header_search_input" placeholder="Tìm kiếm sản phẩm...">
+                                            <div class="custom_dropdown">
+                                                <div class="custom_dropdown_list">
+                                                    <span class="custom_dropdown_placeholder clc">Tất cả danh mục</span>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                    <ul class="custom_list clc">
+                                                        <li><a class="clc" href="#">Tất cả danh mục</a></li>
+                                                        <li><a class="clc" href="#">Cá </a></li>
+                                                        <li><a class="clc" href="#">Mực</a></li>
+                                                        <li><a class="clc" href="#">Tôm khô</a></li>
+                                                        <li><a class="clc" href="#">Sò khô</a></li>
+                                                        <li><a class="clc" href="#">Cá ngựa khô</a></li>
+                                                        <li><a class="clc" href="#">Sá sùng khô</a></li>
+                                                        <li><a class="clc" href="#">Bào ngư/hải sâm khô</a></li>
+                                                        <li><a class="clc" href="#">Hải sản chế biến</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="header_search_button trans_300" value="Submit"><img src="../images/search.png" alt=""></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist -->
+                        <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                            <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                                <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                    <div class="wishlist_icon"><img src="../images/heart.png" alt=""></div>
+                                    <div class="wishlist_content">
+                                        <div class="wishlist_text"><a href="#">Yêu thích</a></div>
+                                        <div class="wishlist_count">115</div>
+                                    </div>
+                                </div>
+
+                                <!-- Cart -->
+                                <div class="cart">
+                                    <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                        <div class="cart_icon">
+                                            <img src="../images/cart.png" alt="">
+                                            <div class="cart_count"><span>10</span></div>
+                                        </div>
+                                        <div class="cart_content">
+                                            <div class="cart_text"><a href="#">Giỏ hàng</a></div>
+                                            <div class="cart_price">$85</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+
+            <nav class="main_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="main_nav_content d-flex flex-row">
+
+                                <!-- Categories Menu -->
+
+                                <div class="cat_menu_container">
+                                    <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cat_burger"><span></span><span></span><span></span></div>
+                                        <div class="cat_menu_text">danh mục</div>
+                                    </div>
+
+                                    <ul class="cat_menu">
+                                        <li class="hassubs">
+                                            <a href="#">Cá<i class="fas fa-chevron-right"></i></a>
+                                            <ul>
+                                                <!--<li class="hassubs">
+                <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+                <ul>
+                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </li>-->
+                                                <li><a href="#">Cá khô<i class="fas fa-chevron-right"></i></a></li>
+                                                <li><a href="#">Cá một nắng<i class="fas fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="#">Mực<i class="fas fa-chevron-right"></i></a>
+                                            <ul>
+                                                <li><a href="#">Mực khô<i class="fas fa-chevron-right"></i></a></li>
+                                                <li><a href="#">Mực một nắng<i class="fas fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Tôm khô<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Sò khô <i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Cá ngựa khô <i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Sá sùng khô<i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="hassubs">
+                                            <a href="#">Hải sâm/Bào ngư khô<i class="fas fa-chevron-right"></i></a>
+                                            <ul>
+                                                <li><a href="#">Hải sâm khô<i class="fas fa-chevron-right"></i></a></li>
+                                                <li><a href="#">Bào ngư khô<i class="fas fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Hải sản chế biến<i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Main Nav Menu -->
+
+                                <div class="main_nav_menu ml-auto">
+                                    <ul class="standard_dropdown main_nav_dropdown">
+                                        <li><a href="#">Trang chủ<i class="fas fa-chevron-down"></i></a></li>
+                                        <li class="hassubs">
+                                            <a href="#">Khuyến mãi Sốc<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cửa hàng<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="contact.html">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu Trigger -->
+
+                                <div class="menu_trigger_container ml-auto">
+                                    <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                                        <div class="menu_burger">
+                                            <div class="menu_trigger_text">menu</div>
+                                            <div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Menu -->
+
+            <div class="page_menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="page_menu_content">
+
+                                <div class="page_menu_search">
+                                    <form action="#">
+                                        <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
+                                    </form>
+                                </div>
+                                <ul class="page_menu_nav">
+                                    <li class="page_menu_item has-children">
+                                        <a href="#">Language<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="#">Currency<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item">
+                                        <a href="#">Home<i class="fa fa-angle-down"></i></a>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
+                                            <li class="page_menu_item has-children">
+                                                <a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
+                                                <ul class="page_menu_selection">
+                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item"><a href="blog.html">blog<i class="fa fa-angle-down"></i></a></li>
+                                    <li class="page_menu_item"><a href="contact.html">contact<i class="fa fa-angle-down"></i></a></li>
+                                </ul>
+
+                                <div class="menu_contact">
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="../images/phone_white.png" alt=""></div>+38 068 005 3570</div>
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="../images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+      
+
+        <div>
+            @RenderBody()
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
+                            <div class="newsletter_title_container">
+                                <div class="newsletter_icon"><img src="../images/send.png" alt=""></div>
+                                <div class="newsletter_title">Đăng ký nhận thông báo mới</div>
+                                <div class="newsletter_text"><p>...và nhận coupon %20 cho lần mua sắm đầu tiên.</p></div>
+                            </div>
+                            <div class="newsletter_content clearfix">
+                                <form action="#" class="newsletter_form">
+                                    <input type="email" class="newsletter_input" required="required" placeholder="Nhập địa chỉ Email của bạn">
+                                    <button class="newsletter_button">Đăng ký</button>
+                                </form>
+                                <div class="newsletter_unsubscribe_link"><a href="#">Hủy đăng ký</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column footer_contact">
+                            <div class="logo_container">
+                                <div class="logo"><a href="#">HaSaKo</a></div>
+                            </div>
+                            <div class="footer_title">Cần hỗ trợ? Gọi chúng tôi 24/7</div>
+                            <div class="footer_phone">+84 8100 1008</div>
+                            <div class="footer_contact_text">
+                                <p>659 QL1A, P. Linh Xuân, Q. Thủ Đức</p>
+                                <p>TP. HCM, Việt Nam</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 offset-lg-2">
+                        <div class="footer_column">
+                            <div class="footer_title">Tìm kiếm Nhanh</div>
+                            <ul class="footer_list">
+                                <li><a href="#">Cá khô</a></li>
+                                <li><a href="#">Vi cá khô</a></li>
+                                <li><a href="#">Mực khô</a></li>
+                                <li><a href="#">Mực dẻo</a></li>
+                                <li><a href="#">Tôm</a></li>
+                            </ul>
+                            <!--div class="footer_subtitle">Gadgets</!--div>-->
+                            <ul class="footer_list">
+                                <li><a href="#">Bạch tuộc</a></li>
+                                <li><a href="#">Bào ngư</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="footer_column">
+                            <div class="footer_title">Chuyển trang</div>
+                            <ul class="footer_list footer_list_2">
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Cửa hàng</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="footer_column">
+                            <div class="footer_title">Bạn cần gì?</div>
+                            <ul class="footer_list">
+                                <li><a href="#">Tài khoản của tôi</a></li>
+                                <li><a href="#">Đơn hàng của tôi</a></li>
+                                <li><a href="#">Danh sách yêu thích</a></li>
+                                <li><a href="#">Dịch vụ CSKH</a></li>
+                                <li><a href="#">Dịch vụ Đổi trả</a></li>
+                                <li><a href="#">Hỏi đáp</a></li>
+                                <li><a href="#">Hỗ trợ sản phẩm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Content/bootstrap4/popper.js"></script>
+    <script src="../Content/bootstrap4/bootstrap.min.js"></script>
+    <script src="../plugins/greensock/TweenMax.min.js"></script>
+    <script src="../plugins/greensock/TimelineMax.min.js"></script>
+    <script src="../plugins/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="../plugins/greensock/animation.gsap.min.js"></script>
+    <script src="../plugins/greensock/ScrollToPlugin.min.js"></script>
+    <script src="../plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="../plugins/slick-1.8.0/slick.js"></script>
+    <script src="../plugins/easing/easing.js"></script>
+    <script src="../Scripts/custom.js"></script>
+</body>
+</html>

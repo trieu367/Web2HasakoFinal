@@ -1,0 +1,47 @@
+﻿@model IEnumerable<UELWeb2Hasako.Models.KhuyenMaiTrongTuan>
+
+@foreach (var sp in Model)
+{
+    <div class="owl-item deals_item">
+        <div class="deals_image"><img src="~/images/@sp.AnhBia" alt=""></div>
+        <div class="deals_content">
+            <div class="deals_info_line d-flex flex-row justify-content-start">
+                <div class="deals_item_category"><a href="#">@sp.TenDM</a></div>
+                <div class="deals_item_price_a ml-auto">@sp.DonGia</div>
+            </div>
+            <div class="deals_info_line d-flex flex-row justify-content-start">
+                <div class="deals_item_name">@sp.TenHS</div>
+                <div class="deals_item_price ml-auto">@sp.GiaKM</div>
+            </div>
+            <div class="available">
+                <div class="available_line d-flex flex-row justify-content-start">
+                    <div class="available_title">Chỉ còn: <span>@sp.HangTon sản phẩm</span></div>
+                    <div class="sold_title ml-auto">Đã bán: <span>@sp.DaBan</span></div>
+                </div>
+                <div class="available_bar"><span style="width:17%"></span></div>
+            </div>
+            <div class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                <div class="deals_timer_title_container">
+                    <div class="deals_timer_title">Nhanh tay mua ngay</div>
+                    <div class="deals_timer_subtitle">KM kết thúc vào:</div>
+                </div>
+                <div class="deals_timer_content ml-auto">
+                    <div class="deals_timer_box clearfix" data-target-time="">
+                        <div class="deals_timer_unit">
+                            <div id="deals_timer1_hr" class="deals_timer_hr"></div>
+                            <span>giờ</span>
+                        </div>
+                        <div class="deals_timer_unit">
+                            <div id="deals_timer1_min" class="deals_timer_min"></div>
+                            <span>phút</span>
+                        </div>
+                        <div class="deals_timer_unit">
+                            <div id="deals_timer1_sec" class="deals_timer_sec"></div>
+                            <span>giây</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
