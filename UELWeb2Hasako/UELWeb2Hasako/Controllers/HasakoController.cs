@@ -88,14 +88,15 @@ namespace UELWeb2Hasako.Controllers
         }
         public ActionResult BanChayNhatTop20()
         {
-            var products = data.HAISANKHOs.ToList();
-            for (int i = 1; i < products.Count; i++)
-            {
-                var pi = products[i - 1];
-                int db = data.CHITIETDONHANGs.Where(x => x.MaHS == pi.MaHS).Count();
-                //var sp = data.HAISANKHOs.OrderByDescending(x => x.CHITIETDONHANGs.Where(a => a.MaHS == pi.MaHS).Count());
-            }
-            return PartialView();
+            return PartialView(Models.BanChayNhat.LaySanPham(20));
+        }
+        public ActionResult BanChayNhatHSK()
+        {
+            return PartialView(Models.BanChayNhat.LaySanPham(20).Where(x => x.MaDM != 7));
+        }
+        public ActionResult BanChayNhatHSCB()
+        {
+            return PartialView(Models.BanChayNhat.LaySanPham(20).Where(x => x.MaDM == 7));
         }
         //Các bạn sections
         public ActionResult SanPham()

@@ -437,6 +437,9 @@
     <Content Include="Views\Hasako\SanPham.cshtml" />
     <Content Include="Views\Hasako\SPTheodanhmuc.cshtml" />
     <Content Include="Views\Shared\_LayoutProduct.cshtml" />
+    <Content Include="Views\Hasako\BanChayNhatHSCB.cshtml" />
+    <Content Include="Views\Hasako\BanChayNhatHSK.cshtml" />
+    <Content Include="Views\Hasako\BanChayNhatTop20.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
