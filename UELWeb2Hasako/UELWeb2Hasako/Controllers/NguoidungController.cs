@@ -105,7 +105,7 @@ namespace UELWeb2Hasako.Controllers
                 if (kh != null)
                 {
                     Session["Taikhoan"] = kh;
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("IndexHasako", "Hasako");
                 }
                 else
                     ViewBag.ThongBao = "Tên đăng nhập hoặc mật khẩu không đúng";

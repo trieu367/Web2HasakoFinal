@@ -13,7 +13,20 @@
     <link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="../plugins/slick-1.8.0/slick.css">
     <link rel="stylesheet" type="text/css" href="../plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-
+    <link rel="stylesheet" href="~/Content/animate.css">
+    <link rel="stylesheet" href="~/Content/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/aos.css">
+    <link rel="stylesheet" href="~/Content/ionicons.min.css">
+    <link rel="stylesheet" href="~/Content/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/Content/jquery.timepicker.css">
+    <link rel="stylesheet" href="~/Content/flaticon.css">
+    <link rel="stylesheet" href="~/Content/icomoon.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/40/12/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/40/12/util.js"></script>
     <!--Index styles-->
     <link rel="stylesheet" type="text/css" href="../Content/main_styles.css">
     <link rel="stylesheet" type="text/css" href="../Content/responsive.css">
@@ -53,8 +66,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex flex-row">
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+84 8100 1008</div>
-                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:support@hasako.com">support@hasako.com</a></div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="~/images/phone.png" alt=""></div>+84 8100 1008</div>
+                            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="~/images/mail.png" alt=""></div><a href="mailto:support@hasako.com">support@hasako.com</a></div>
                             <div class="top_bar_content ml-auto">
                                 <div class="top_bar_menu">
                                     <ul class="standard_dropdown top_bar_dropdown">
@@ -77,9 +90,8 @@
                                     </ul>
                                 </div>
                                 <div class="top_bar_user">
-                                    <div class="user_icon"><img src="images/user.svg" alt=""></div>
-                                    <div><a href="#">Register</a></div>
-                                    <div><a href="#">Sign in</a></div>
+                                    <div class="user_icon"><img src="~/images/user.svg" alt=""></div>
+                            
                                 </div>
                             </div>
                         </div>
@@ -96,7 +108,7 @@
                         <!-- Logo -->
                         <div class="col-lg-2 col-sm-3 col-3 order-1">
                             <div class="logo_container">
-                                <div class="logo"><a href="#">OneTech</a></div>
+                                <div class="logo"><a href="@Url.Action("IndexHasako", null, new { area = string.Empty, controller = "Hasako" },@Request.Url.Scheme )"><img src="~/images/hasakologo.png" style="width:114.39px;height:120px" /></a></div>
                             </div>
                         </div>
 
@@ -106,22 +118,25 @@
                                 <div class="header_search_content">
                                     <div class="header_search_form_container">
                                         <form action="#" class="header_search_form clearfix">
-                                            <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                            <input type="search" required="required" class="header_search_input" placeholder="Tìm kiếm sản phẩm...">
                                             <div class="custom_dropdown">
                                                 <div class="custom_dropdown_list">
-                                                    <span class="custom_dropdown_placeholder clc">All Categories</span>
+                                                    <span class="custom_dropdown_placeholder clc">Tất cả danh mục</span>
                                                     <i class="fas fa-chevron-down"></i>
                                                     <ul class="custom_list clc">
-                                                        <li><a class="clc" href="#">All Categories</a></li>
-                                                        <li><a class="clc" href="#">Computers</a></li>
-                                                        <li><a class="clc" href="#">Laptops</a></li>
-                                                        <li><a class="clc" href="#">Cameras</a></li>
-                                                        <li><a class="clc" href="#">Hardware</a></li>
-                                                        <li><a class="clc" href="#">Smartphones</a></li>
+                                                        <li><a class="clc" href="#">Tất cả danh mục</a></li>
+                                                        <li><a class="clc" href="#">Cá </a></li>
+                                                        <li><a class="clc" href="#">Mực</a></li>
+                                                        <li><a class="clc" href="#">Tôm khô</a></li>
+                                                        <li><a class="clc" href="#">Sò khô</a></li>
+                                                        <li><a class="clc" href="#">Cá ngựa khô</a></li>
+                                                        <li><a class="clc" href="#">Sá sùng khô</a></li>
+                                                        <li><a class="clc" href="#">Bào ngư/hải sâm khô</a></li>
+                                                        <li><a class="clc" href="#">Hải sản chế biến</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/search.png" alt=""></button>
+                                            <button type="submit" class="header_search_button trans_300" value="Submit"><img src="~/images/search.png" alt=""></button>
                                         </form>
                                     </div>
                                 </div>
@@ -132,9 +147,9 @@
                         <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                             <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                                 <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                    <div class="wishlist_icon"><img src="images/heart.png" alt=""></div>
+                                    <div class="wishlist_icon"><img src="~/images/heart.png" alt=""></div>
                                     <div class="wishlist_content">
-                                        <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                        <div class="wishlist_text"><a href="#">Yêu thích</a></div>
                                         <div class="wishlist_count">115</div>
                                     </div>
                                 </div>
@@ -143,11 +158,11 @@
                                 <div class="cart">
                                     <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                         <div class="cart_icon">
-                                            <img src="images/cart.png" alt="">
+                                            <img src="../images/cart.png" alt="">
                                             <div class="cart_count"><span>10</span></div>
                                         </div>
                                         <div class="cart_content">
-                                            <div class="cart_text"><a href="#">Cart</a></div>
+                                            <div class="cart_text"><a href="#">Giỏ hàng</a></div>
                                             <div class="cart_price">$85</div>
                                         </div>
                                     </div>
@@ -169,39 +184,39 @@
 
                                 <!-- Categories Menu -->
                                 <!--<div class="cat_menu_container">
-                                <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
-                                    <div class="cat_burger"><span></span><span></span><span></span></div>
-                                    <div class="cat_menu_text">categories</div>
-                                </div>
+                                    <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cat_burger"><span></span><span></span><span></span></div>
+                                        <div class="cat_menu_text">categories</div>
+                                    </div>
 
-                                <ul class="cat_menu">
-                                    <li><a href="#">Computers & Laptops <i class="fas fa-chevron-right ml-auto"></i></a></li>
-                                    <li><a href="#">Cameras & Photos<i class="fas fa-chevron-right"></i></a></li>
-                                    <li class="hassubs">
-                                        <a href="#">Hardware<i class="fas fa-chevron-right"></i></a>
-                                        <ul>
-                                            <li class="hassubs">
-                                                <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Smartphones & Tablets<i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="#">TV & Audio<i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="#">Video Games & Consoles<i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="#">Accessories<i class="fas fa-chevron-right"></i></a></li>
-                                </ul>
-                            </div>-->
+                                    <ul class="cat_menu">
+                                        <li><a href="#">Computers & Laptops <i class="fas fa-chevron-right ml-auto"></i></a></li>
+                                        <li><a href="#">Cameras & Photos<i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="hassubs">
+                                            <a href="#">Hardware<i class="fas fa-chevron-right"></i></a>
+                                            <ul>
+                                                <li class="hassubs">
+                                                    <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Smartphones & Tablets<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">TV & Audio<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Video Games & Consoles<i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a href="#">Accessories<i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>-->
                                 <div class="cat_menu_container">
                                     <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
                                         <div class="cat_burger"><span></span><span></span><span></span></div>
@@ -213,14 +228,14 @@
                                             <a href="#">Cá<i class="fas fa-chevron-right"></i></a>
                                             <ul>
                                                 <!--<li class="hassubs">
-                                                <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-                                                </ul>
-                                            </li>-->
+                                                    <a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </li>-->
                                                 <li><a href="#">Cá khô<i class="fas fa-chevron-right"></i></a></li>
                                                 <li><a href="#">Vi cá khô<i class="fas fa-chevron-right"></i></a></li>
                                             </ul>
@@ -240,56 +255,56 @@
 
                                 <!-- Main Nav Menu -->
                                 <!-- <div class="main_nav_menu ml-auto">
-                                <ul class="standard_dropdown main_nav_dropdown">
-                                    <li><a href="index.html">Home<i class="fas fa-chevron-down"></i></a></li>
-                                    <li class="hassubs">
-                                        <a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hassubs">
-                                        <a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hassubs">
-                                        <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                    <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-                                </ul>
-                            </div>-->
+                                    <ul class="standard_dropdown main_nav_dropdown">
+                                        <li><a href="index.html">Home<i class="fas fa-chevron-down"></i></a></li>
+                                        <li class="hassubs">
+                                            <a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                                    </ul>
+                                </div>-->
                                 <div class="main_nav_menu ml-auto">
                                     <ul class="standard_dropdown main_nav_dropdown">
                                         <li><a href="#">Trang chủ<i class="fas fa-chevron-down"></i></a></li>
@@ -311,7 +326,7 @@
                                         </li>
                                         <li><a href="#">Cửa hàng<i class="fas fa-chevron-down"></i></a></li>
                                         <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                        <li><a href="contact.html">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
+                                        <li><a href="@Url.Action("LienHe", null, new { area = string.Empty, controller = "Hasako" },@Request.Url.Scheme )">Liên hệ<i class="fas fa-chevron-down"></i></a></li>
                                     </ul>
                                 </div>
 
@@ -409,8 +424,8 @@
                                 </ul>
 
                                 <div class="menu_contact">
-                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570</div>
-                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="~/images/phone_white.png" alt=""></div>+38 068 005 3570</div>
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="~/images/mail_white.png" alt=""></div><a href="mailto:support@hasako.com">support@hasako.com</a></div>
                                 </div>
                             </div>
                         </div>
@@ -426,27 +441,27 @@
         <!-- Newsletter -->
         <!--Ban đầu-->
         <!--<div class="newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
-                        <div class="newsletter_title_container">
-                            <div class="newsletter_icon"><img src="images/send.png" alt=""></div>
-                            <div class="newsletter_title">Sign up for Newsletter</div>
-                            <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
-                        </div>
-                        <div class="newsletter_content clearfix">
-                            <form action="#" class="newsletter_form">
-                                <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
-                                <button class="newsletter_button">Subscribe</button>
-                            </form>
-                            <div class="newsletter_unsubscribe_link"><a href="#">unsubscribe</a></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
+                            <div class="newsletter_title_container">
+                                <div class="newsletter_icon"><img src="images/send.png" alt=""></div>
+                                <div class="newsletter_title">Sign up for Newsletter</div>
+                                <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
+                            </div>
+                            <div class="newsletter_content clearfix">
+                                <form action="#" class="newsletter_form">
+                                    <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
+                                    <button class="newsletter_button">Subscribe</button>
+                                </form>
+                                <div class="newsletter_unsubscribe_link"><a href="#">unsubscribe</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>-->
+        </div>-->
         <!--Đã sửa-->
         <div class="newsletter">
             <div class="container">
@@ -460,7 +475,7 @@
                             </div>
                             <div class="newsletter_content clearfix">
                                 <form action="#" class="newsletter_form">
-                                    <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
+                                    <input type="email" class="newsletter_input" required="required" placeholder="Nhập email của bạn">
                                     <button class="newsletter_button">Đăng ký</button>
                                 </form>
                                 <div class="newsletter_unsubscribe_link"><a href="#">Hủy đăng ký</a></div>
@@ -475,79 +490,79 @@
         <!-- Footer -->
         <!--Footer ban đầu-->
         <!--<footer class="footer">
-        <div class="container">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-lg-3 footer_col">
-                    <div class="footer_column footer_contact">
-                        <div class="logo_container">
-                            <div class="logo"><a href="#">OneTech</a></div>
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column footer_contact">
+                            <div class="logo_container">
+                                <div class="logo"><a href="#">OneTech</a></div>
+                            </div>
+                            <div class="footer_title">Got Question? Call Us 24/7</div>
+                            <div class="footer_phone">+38 068 005 3570</div>
+                            <div class="footer_contact_text">
+                                <p>17 Princess Road, London</p>
+                                <p>Grester London NW18JR, UK</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footer_title">Got Question? Call Us 24/7</div>
-                        <div class="footer_phone">+38 068 005 3570</div>
-                        <div class="footer_contact_text">
-                            <p>17 Princess Road, London</p>
-                            <p>Grester London NW18JR, UK</p>
-                        </div>
-                        <div class="footer_social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </div>
+
+                    <div class="col-lg-2 offset-lg-2">
+                        <div class="footer_column">
+                            <div class="footer_title">Find it Fast</div>
+                            <ul class="footer_list">
+                                <li><a href="#">Computers & Laptops</a></li>
+                                <li><a href="#">Cameras & Photos</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">Smartphones & Tablets</a></li>
+                                <li><a href="#">TV & Audio</a></li>
+                            </ul>
+                            <div class="footer_subtitle">Gadgets</div>
+                            <ul class="footer_list">
+                                <li><a href="#">Car Electronics</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-2 offset-lg-2">
-                    <div class="footer_column">
-                        <div class="footer_title">Find it Fast</div>
-                        <ul class="footer_list">
-                            <li><a href="#">Computers & Laptops</a></li>
-                            <li><a href="#">Cameras & Photos</a></li>
-                            <li><a href="#">Hardware</a></li>
-                            <li><a href="#">Smartphones & Tablets</a></li>
-                            <li><a href="#">TV & Audio</a></li>
-                        </ul>
-                        <div class="footer_subtitle">Gadgets</div>
-                        <ul class="footer_list">
-                            <li><a href="#">Car Electronics</a></li>
-                        </ul>
+                    <div class="col-lg-2">
+                        <div class="footer_column">
+                            <ul class="footer_list footer_list_2">
+                                <li><a href="#">Video Games & Consoles</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Cameras & Photos</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">Computers & Laptops</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-2">
-                    <div class="footer_column">
-                        <ul class="footer_list footer_list_2">
-                            <li><a href="#">Video Games & Consoles</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Cameras & Photos</a></li>
-                            <li><a href="#">Hardware</a></li>
-                            <li><a href="#">Computers & Laptops</a></li>
-                        </ul>
+                    <div class="col-lg-2">
+                        <div class="footer_column">
+                            <div class="footer_title">Customer Care</div>
+                            <ul class="footer_list">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Customer Services</a></li>
+                                <li><a href="#">Returns / Exchange</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Product Support</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-2">
-                    <div class="footer_column">
-                        <div class="footer_title">Customer Care</div>
-                        <ul class="footer_list">
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Order Tracking</a></li>
-                            <li><a href="#">Wish List</a></li>
-                            <li><a href="#">Customer Services</a></li>
-                            <li><a href="#">Returns / Exchange</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Product Support</a></li>
-                        </ul>
-                    </div>
                 </div>
-
             </div>
-        </div>
-    </footer>-->
+        </footer>-->
         <!--Footer đã sửa-->
         <footer class="footer">
             <div class="container">
@@ -602,7 +617,7 @@
                                 <li><a href="#">Trang chủ</a></li>
                                 <li><a href="#">Cửa hàng</a></li>
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#" onclick="@("window.location.href='" + @Url.Action("LienHe", "Hasako") + "'");">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
