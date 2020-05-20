@@ -8,24 +8,34 @@ namespace UELWeb2Hasako.Models
     public class BanChayNhat
     {
         public int MaHS { get; set; }
+        public int MaDM { get; set; }
         public string TenDM { get; set; }
         public string TenHS { get; set; }
         public int DonGia { get; set; }
         public string AnhBia { get; set; }
         public int? HangTon { get; set; }
-        public int DaBan { get; set; }
-        public static List<BanChayNhat> LaySanPham()
+        public int ? DaBan { get; set; }
+        public static List<BanChayNhat> LaySanPham(int count)
         {
             dbHasakoProjectDataContext data = new dbHasakoProjectDataContext();
             List<BanChayNhat> dsHS = new List<BanChayNhat>();
-            List<HAISANKHO> ds = data.HAISANKHOs.OrderBy(s => s.Ngaycapnhat).Take(3).ToList();
+            List<HAISANKHO> ds = data.HAISANKHOs.ToList();
+            List<CHITIETDONHANG> ct = data.CHITIETDONHANGs.ToList();
+
             foreach (var hs in ds)
             {
-                CHITIETDONHANG ct = data.CHITIETDONHANGs.FirstOrDefault(x => x.MaHS==hs.MaHS);
-               // int db = 
-               // dsHS.Add(new KhuyenMaiTrongTuan() { MaHS = hs.MaHS, TenDM = dm.TenDM, TenHS = hs.TenHS, DonGia = hs.Dongia, AnhBia = hs.Anhbia, PhanTramGiam = pt, GiaKM = km, HangTon = hs.Soluongton, DaBan = db });
+                DANHMUCHAISANKHO dm = data.DANHMUCHAISANKHOs.FirstOrDefault(x => x.MaDM == hs.MaDM);
+                int ? sum = 0; 
+                foreach (var c in ct)
+                {
+                    if (c.MaHS==hs.MaHS)
+                    {
+                        sum += c.Soluong;
+                    }
+                }
+               dsHS.Add(new BanChayNhat() { MaHS = hs.MaHS,MaDM=dm.MaDM, TenDM = dm.TenDM, TenHS = hs.TenHS, DonGia = hs.Dongia, AnhBia = hs.Anhbia, HangTon = hs.Soluongton, DaBan = sum });
             }
-            return dsHS;
+            return dsHS.OrderByDescending(x=>x.DaBan).Take(count).ToList();
         }
     }
 }
