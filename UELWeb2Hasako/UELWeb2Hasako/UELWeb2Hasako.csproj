@@ -122,6 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GiohangController.cs" />
     <Compile Include="Controllers\HasakoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NguoidungController.cs" />
@@ -134,6 +135,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbHasakoProject.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Giohang.cs" />
     <Compile Include="Models\KhuyenMaiTrongTuan.cs" />
     <Compile Include="Models\SanPhamDangGiamGia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -437,6 +439,7 @@
     <Content Include="Views\Hasako\SanPham.cshtml" />
     <Content Include="Views\Hasako\SPTheodanhmuc.cshtml" />
     <Content Include="Views\Shared\_LayoutProduct.cshtml" />
+    <Content Include="Views\Giohang\GioHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
