@@ -81,7 +81,7 @@
         <classShapeMoniker Id="8b827fc9-ac15-440d-9406-98c33a75cb58" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.71875 : 8.125); (3.71875 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.71875 : 8.125); (3.71875 : 0.829850531684028); (6.25 : 0.829850531684028)]" fixedFrom="Algorithm" fixedTo="Caller">
       <AssociationMoniker Name="/dbHasakoProjectDataContext/DONHANG/DONHANG_CHITIETDONHANG" />
       <nodes>
         <classShapeMoniker Id="79d68e54-1c14-4116-93d5-13e11775ac07" />
@@ -95,14 +95,14 @@
         <classShapeMoniker Id="a3c61bff-d701-4729-9ab8-afc7f102865d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 11.9728011067708); (3.125 : 12.3478011067708); (3.125 : 11.6237866958634); (3.12857443490112 : 11.6273611307645 : JumpStart); (3.24642556509888 : 11.7452122609623 : JumpEnd); (3.50121330413662 : 12)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 11.9728011067708); (3.125 : 12.3478011067708); (3.125 : 11.6237866958634); (3.12857443490112 : 11.6273611307645 : JumpStart); (3.24642556509888 : 11.7452122609623 : JumpEnd); (3.25357443490112 : 11.7523611307645 : JumpStart); (3.37142556509888 : 11.8702122609623 : JumpEnd); (3.50121330413662 : 12)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/dbHasakoProjectDataContext/KHACHHANG/KHACHHANG_THANHTOAN" />
       <nodes>
         <classShapeMoniker Id="949fb6f8-8395-44c5-ac8d-c9c5e017946d" />
         <classShapeMoniker Id="a3c61bff-d701-4729-9ab8-afc7f102865d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 10.1450512695313); (3.5 : 10.1450512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 10.1450512695313); (3.10416666666667 : 10.1450512695313 : JumpStart); (3.39583333333333 : 10.1450512695313 : JumpEnd); (3.5 : 10.1450512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/dbHasakoProjectDataContext/KHACHHANG/KHACHHANG_DONHANG" />
       <nodes>
         <classShapeMoniker Id="949fb6f8-8395-44c5-ac8d-c9c5e017946d" />
@@ -136,14 +136,14 @@
         <elementListCompartment Id="481b7fd4-5669-40b2-9b4c-d21bde71378c" absoluteBounds="4.015, 4.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6 : 4.85179768880208); (6.25 : 4.85179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(6 : 5.07619466145833); (6.25 : 5.07619466145833)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/dbHasakoProjectDataContext/HAISANKHO/HAISANKHO_MOTAHAISANKHO" />
       <nodes>
         <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
         <classShapeMoniker Id="a7e0c746-939a-403b-aa8c-0733acdb3bf7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 2.01087117513021); (3.63541666666667 : 2.01087117513021 : JumpStart); (3.80208333333333 : 2.01087117513021 : JumpEnd); (5 : 2.01087117513021); (5 : 4.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.09181966145833); (3.63541666666667 : 2.09181966145833 : JumpStart); (3.80208333333333 : 2.09181966145833 : JumpEnd); (4.3380576907473 : 2.09181966145833); (4.3380576907473 : 4.25)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Caller">
       <AssociationMoniker Name="/dbHasakoProjectDataContext/CHITIETNHAPHANG/CHITIETNHAPHANG_HAISANKHO" />
       <nodes>
         <classShapeMoniker Id="e170533c-8752-451f-8fe6-269afe8b9653" />
@@ -155,6 +155,19 @@
       <nodes>
         <classShapeMoniker Id="db4517e8-ee00-4683-819e-00909ee653a5" />
         <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e8575436-cd34-49da-9836-1ea12c5ac3e8" absoluteBounds="5.125, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dbHasakoProjectDataContext/KHUYENMAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70c9a052-b7c3-4de5-b935-81a8889d5c32" absoluteBounds="5.14, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5625 : 4.25); (5.5625 : 2.8862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbHasakoProjectDataContext/HAISANKHO/HAISANKHO_KHUYENMAI" />
+      <nodes>
+        <classShapeMoniker Id="5ad8be08-a147-4d3a-b99f-a853f8b0a347" />
+        <classShapeMoniker Id="e8575436-cd34-49da-9836-1ea12c5ac3e8" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

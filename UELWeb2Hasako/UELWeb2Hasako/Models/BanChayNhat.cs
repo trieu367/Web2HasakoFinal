@@ -9,6 +9,7 @@ namespace UELWeb2Hasako.Models
     {
         public int MaHS { get; set; }
         public int MaDM { get; set; }
+        public string MoTa { get; set; }
         public string TenDM { get; set; }
         public string TenHS { get; set; }
         public int DonGia { get; set; }
@@ -33,7 +34,7 @@ namespace UELWeb2Hasako.Models
                         sum += c.Soluong;
                     }
                 }
-               dsHS.Add(new BanChayNhat() { MaHS = hs.MaHS,MaDM=dm.MaDM, TenDM = dm.TenDM, TenHS = hs.TenHS, DonGia = hs.Dongia, AnhBia = hs.Anhbia, HangTon = hs.Soluongton, DaBan = sum });
+               dsHS.Add(new BanChayNhat() { MaHS = hs.MaHS,MaDM=dm.MaDM, TenDM = dm.TenDM, TenHS = hs.TenHS, DonGia = hs.Dongia, AnhBia = hs.Anhbia, HangTon = hs.Soluongton, DaBan = sum , MoTa=hs.Mota});
             }
             return dsHS.OrderByDescending(x=>x.DaBan).Take(count).ToList();
         }
