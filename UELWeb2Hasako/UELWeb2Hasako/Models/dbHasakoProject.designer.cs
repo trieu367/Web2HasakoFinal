@@ -204,6 +204,14 @@ namespace UELWeb2Hasako.Models
 				return this.GetTable<HAISANKHO>();
 			}
 		}
+		
+		public System.Data.Linq.Table<KHUYENMAI> KHUYENMAIs
+		{
+			get
+			{
+				return this.GetTable<KHUYENMAI>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BLOG")]
@@ -3123,6 +3131,69 @@ namespace UELWeb2Hasako.Models
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KHUYENMAI")]
+	public partial class KHUYENMAI
+	{
+		
+		private int _MaHS;
+		
+		private int _PhanTramGiam;
+		
+		private bool _TinhTrangKM;
+		
+		public KHUYENMAI()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHS", DbType="Int NOT NULL")]
+		public int MaHS
+		{
+			get
+			{
+				return this._MaHS;
+			}
+			set
+			{
+				if ((this._MaHS != value))
+				{
+					this._MaHS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhanTramGiam", DbType="Int NOT NULL")]
+		public int PhanTramGiam
+		{
+			get
+			{
+				return this._PhanTramGiam;
+			}
+			set
+			{
+				if ((this._PhanTramGiam != value))
+				{
+					this._PhanTramGiam = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrangKM", DbType="Bit NOT NULL")]
+		public bool TinhTrangKM
+		{
+			get
+			{
+				return this._TinhTrangKM;
+			}
+			set
+			{
+				if ((this._TinhTrangKM != value))
+				{
+					this._TinhTrangKM = value;
+				}
 			}
 		}
 	}

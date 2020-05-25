@@ -139,8 +139,17 @@
       <Column Name="MaDM" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MaNH" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="HAISANKHO_MOTAHAISANKHO" Member="MOTAHAISANKHO" ThisKey="MaHS" OtherKey="MaHS" Type="MOTAHAISANKHO" Cardinality="One" />
+      <Association Name="HAISANKHO_KHUYENMAI" Member="KHUYENMAIs" ThisKey="MaHS" OtherKey="MaHS" Type="KHUYENMAI" />
       <Association Name="CHITIETNHAPHANG_HAISANKHO" Member="CHITIETNHAPHANG" ThisKey="MaNH" OtherKey="MaNH" Type="CHITIETNHAPHANG" IsForeignKey="true" />
       <Association Name="DANHMUCHAISANKHO_HAISANKHO" Member="DANHMUCHAISANKHO" ThisKey="MaDM" OtherKey="MaDM" Type="DANHMUCHAISANKHO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHUYENMAI" Member="KHUYENMAIs">
+    <Type Name="KHUYENMAI">
+      <Column Name="MaHS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PhanTramGiam" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TinhTrangKM" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="HAISANKHO_KHUYENMAI" Member="HAISANKHO" ThisKey="MaHS" OtherKey="MaHS" Type="HAISANKHO" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

@@ -68,6 +68,7 @@ namespace UELWeb2Hasako.Controllers
         //Sản phẩm nổi bật đang khuyến mãi
         public ActionResult KhuyenMaiTrongTuan()
         {
+            List <HAISANKHO> hs = data.HAISANKHOs.ToList();
             return PartialView(Models.KhuyenMaiTrongTuan.LaySanPham());
         }
         //Sản phẩm đặc trưng của Hasako
@@ -88,14 +89,19 @@ namespace UELWeb2Hasako.Controllers
         }
         public ActionResult BanChayNhatTop20()
         {
-            var products = data.HAISANKHOs.ToList();
-            for (int i = 1; i < products.Count; i++)
-            {
-                var pi = products[i - 1];
-                int db = data.CHITIETDONHANGs.Where(x => x.MaHS == pi.MaHS).Count();
-                //var sp = data.HAISANKHOs.OrderByDescending(x => x.CHITIETDONHANGs.Where(a => a.MaHS == pi.MaHS).Count());
-            }
-            return PartialView();
+            return PartialView(Models.BanChayNhat.LaySanPham(20));
+        }
+        public ActionResult BanChayNhatHSK()
+        {
+            return PartialView(Models.BanChayNhat.LaySanPham(20).Where(x => x.MaDM != 7));
+        }
+        public ActionResult BanChayNhatHSCB()
+        {
+            return PartialView(Models.BanChayNhat.LaySanPham(20).Where(x => x.MaDM == 7));
+        }
+        public ActionResult Banner()
+        {
+            return PartialView(Models.BanChayNhat.LaySanPham(3));
         }
         //Các bạn sections
         public ActionResult SanPham()
